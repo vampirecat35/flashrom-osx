@@ -1,0 +1,4 @@
+FEATURES := yes
+FTDISUPPORT := no
+UTSNAME := yes
+CLOCK_GETTIME := no

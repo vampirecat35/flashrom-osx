@@ -1,0 +1,393 @@
+Build started on ma 18 jan 2021 14:25:25 CET
+
+exec: export LC_ALL=C ; { cc  -E os.h 2>/dev/null | grep -v ^# | grep ' | cut -f 2 -d' ; }
+Darwin
+
+exec: export LC_ALL=C ; { cc -I/opt/local/include -I/usr/local/include -E archtest.c 2>/dev/null | grep -v ^# | grep ' | cut -f 2 -d' ; }
+x86
+
+exec: export LC_ALL=C ; { cc -I/opt/local/include -I/usr/local/include -E endiantest.c 2>/dev/null | grep -v ^# ; }
+
+little
+
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR="" ; pkg-config --libs libftdi1 || pkg-config --libs libftdi || printf "%s" "-lftdi -lusb" ; }
+Package libftdi1 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libftdi1.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libftdi1' found
+Package libftdi was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libftdi.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libftdi' found
+-lftdi -lusb
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR="" ; pkg-config --cflags-only-I libftdi1 ; }
+Package libftdi1 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libftdi1.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libftdi1' found
+
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+Checking for a C compiler... 
+exec: cc -I/opt/local/include -I/usr/local/include -I/usr/include/libusb-1.0 -Os -Wall -Wextra -Wno-unused-parameter -Wshadow -Wmissing-prototypes -Wwrite-strings -F/Library/Frameworks -Werror -L/opt/local/lib -L/usr/local/lib .test.c -o .test
+ld: warning: directory not found for option '-L/opt/local/lib'
+found.
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --libs libusb-1.0  || printf "%s" "-lusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-lusb-1.0
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --libs libusb-1.0  || printf "%s" "-lusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-lusb-1.0
+Checking for libpci headers... 
+exec: cc -c -I/opt/local/include -I/usr/local/include -I/usr/include/libusb-1.0 -Os -Wall -Wextra -Wno-unused-parameter -Wshadow -Wmissing-prototypes -Wwrite-strings -F/Library/Frameworks -Werror .test.c -o .test.o
+found.
+Checking version of pci_get_dev... 
+exec: cc -c -I/opt/local/include -I/usr/local/include -I/usr/include/libusb-1.0 -Os -Wall -Wextra -Wno-unused-parameter -Wshadow -Wmissing-prototypes -Wwrite-strings -F/Library/Frameworks -Werror .test.c -o .test.o
+new version (including PCI domain parameter).
+Checking if libpci is present and sufficient... 
+exec: cc -L/opt/local/lib -L/usr/local/lib .test.o -o .test  -lpci -framework IOKit -L/usr/local/lib -lDirectHW
+ld: warning: directory not found for option '-L/opt/local/lib'
+ld: warning: object file (/tmp/lto.o) was built for newer macOS version (11.1) than being linked (11.0)
+undef: _gzeof
+undef: _gzgets
+undef: _gzopen
+undef: _gzclose
+undef: _gzerror
+undef: _zError
+Undefined symbols for architecture x86_64:
+  "_gzeof", referenced from:
+      _pci_load_name_list in libpci.a(names-parse.o)
+  "_gzgets", referenced from:
+      _pci_load_name_list in libpci.a(names-parse.o)
+  "_gzopen", referenced from:
+      _pci_load_name_list in libpci.a(names-parse.o)
+  "_gzclose", referenced from:
+      _pci_load_name_list in libpci.a(names-parse.o)
+  "_gzerror", referenced from:
+      _pci_load_name_list in libpci.a(names-parse.o)
+  "_zError", referenced from:
+      _pci_load_name_list in libpci.a(names-parse.o)
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+no.
+
+Checking if libz+libpci are present and sufficient...exec: cc -L/opt/local/lib -L/usr/local/lib .test.o -o .test  -lpci -framework IOKit -L/usr/local/lib -lDirectHW -lz
+ld: warning: directory not found for option '-L/opt/local/lib'
+ld: warning: object file (/tmp/lto.o) was built for newer macOS version (11.1) than being linked (11.0)
+yes.
+Checking for libusb-1.0 headers... 
+exec: cc -c -I/opt/local/include -I/usr/local/include -I/usr/include/libusb-1.0 -Os -Wall -Wextra -Wno-unused-parameter -Wshadow -Wmissing-prototypes -Wwrite-strings -F/Library/Frameworks -Werror .test.c -o .test.o
+found.
+Checking if libusb-1.0 is usable... 
+exec: cc -L/opt/local/lib -L/usr/local/lib .test.o -o .test  -lusb-1.0
+ld: warning: directory not found for option '-L/opt/local/lib'
+yes.
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+Checking for FTDI support... 
+exec: cc -I/opt/local/include -I/usr/local/include -I/usr/include/libusb-1.0 -Os -Wall -Wextra -Wno-unused-parameter -Wshadow -Wmissing-prototypes -Wwrite-strings -F/Library/Frameworks -Werror  -L/opt/local/lib -L/usr/local/lib .featuretest.c -o .featuretest -lftdi -lusb 
+.featuretest.c:2:10: fatal error: 'ftdi.h' file not found
+#include <ftdi.h>
+         ^~~~~~~~
+1 error generated.
+not found.
+Checking for utsname support... 
+exec: cc -I/opt/local/include -I/usr/local/include -I/usr/include/libusb-1.0 -Os -Wall -Wextra -Wno-unused-parameter -Wshadow -Wmissing-prototypes -Wwrite-strings -F/Library/Frameworks -Werror -L/opt/local/lib -L/usr/local/lib .featuretest.c -o .featuretest
+ld: warning: directory not found for option '-L/opt/local/lib'
+found.
+Checking for clock_gettime support... 
+exec: cc -I/opt/local/include -I/usr/local/include -I/usr/include/libusb-1.0 -Os -Wall -Wextra -Wno-unused-parameter -Wshadow -Wmissing-prototypes -Wwrite-strings -F/Library/Frameworks -Werror -L/opt/local/lib -L/usr/local/lib -lrt .featuretest.c -o .featuretest
+ld: warning: directory not found for option '-L/opt/local/lib'
+ld: library not found for -lrt
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+not found.
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_FT2232_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_USBBLASTER_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FT232H := yes" .features && printf "%s" "-DHAVE_FT232H=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "OLD_PCI_GET_DEV := yes" .libdeps && printf "%s" "-DOLD_PCI_GET_DEV=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "UTSNAME := yes" .features && printf "%s" "-DHAVE_UTSNAME=1" ; }
+-D'HAVE_UTSNAME=1'
+exec: export LC_ALL=C ; { grep -q "CLOCK_GETTIME := yes" .features && printf "%s" "-DHAVE_CLOCK_GETTIME=1" ; }
+
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_FT2232_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_USBBLASTER_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FT232H := yes" .features && printf "%s" "-DHAVE_FT232H=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "OLD_PCI_GET_DEV := yes" .libdeps && printf "%s" "-DOLD_PCI_GET_DEV=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "UTSNAME := yes" .features && printf "%s" "-DHAVE_UTSNAME=1" ; }
+-D'HAVE_UTSNAME=1'
+exec: export LC_ALL=C ; { grep -q "CLOCK_GETTIME := yes" .features && printf "%s" "-DHAVE_CLOCK_GETTIME=1" ; }
+
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_FT2232_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_USBBLASTER_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FT232H := yes" .features && printf "%s" "-DHAVE_FT232H=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "OLD_PCI_GET_DEV := yes" .libdeps && printf "%s" "-DOLD_PCI_GET_DEV=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "UTSNAME := yes" .features && printf "%s" "-DHAVE_UTSNAME=1" ; }
+-D'HAVE_UTSNAME=1'
+exec: export LC_ALL=C ; { grep -q "CLOCK_GETTIME := yes" .features && printf "%s" "-DHAVE_CLOCK_GETTIME=1" ; }
+
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_FT2232_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_USBBLASTER_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FT232H := yes" .features && printf "%s" "-DHAVE_FT232H=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "OLD_PCI_GET_DEV := yes" .libdeps && printf "%s" "-DOLD_PCI_GET_DEV=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "UTSNAME := yes" .features && printf "%s" "-DHAVE_UTSNAME=1" ; }
+-D'HAVE_UTSNAME=1'
+exec: export LC_ALL=C ; { grep -q "CLOCK_GETTIME := yes" .features && printf "%s" "-DHAVE_CLOCK_GETTIME=1" ; }
+
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_FT2232_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_USBBLASTER_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FT232H := yes" .features && printf "%s" "-DHAVE_FT232H=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "OLD_PCI_GET_DEV := yes" .libdeps && printf "%s" "-DOLD_PCI_GET_DEV=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "UTSNAME := yes" .features && printf "%s" "-DHAVE_UTSNAME=1" ; }
+-D'HAVE_UTSNAME=1'
+exec: export LC_ALL=C ; { grep -q "CLOCK_GETTIME := yes" .features && printf "%s" "-DHAVE_CLOCK_GETTIME=1" ; }
+
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_FT2232_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_USBBLASTER_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FT232H := yes" .features && printf "%s" "-DHAVE_FT232H=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "OLD_PCI_GET_DEV := yes" .libdeps && printf "%s" "-DOLD_PCI_GET_DEV=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "UTSNAME := yes" .features && printf "%s" "-DHAVE_UTSNAME=1" ; }
+-D'HAVE_UTSNAME=1'
+exec: export LC_ALL=C ; { grep -q "CLOCK_GETTIME := yes" .features && printf "%s" "-DHAVE_CLOCK_GETTIME=1" ; }
+
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_FT2232_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_USBBLASTER_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FT232H := yes" .features && printf "%s" "-DHAVE_FT232H=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "OLD_PCI_GET_DEV := yes" .libdeps && printf "%s" "-DOLD_PCI_GET_DEV=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "UTSNAME := yes" .features && printf "%s" "-DHAVE_UTSNAME=1" ; }
+-D'HAVE_UTSNAME=1'
+exec: export LC_ALL=C ; { grep -q "CLOCK_GETTIME := yes" .features && printf "%s" "-DHAVE_CLOCK_GETTIME=1" ; }
+
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_FT2232_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_USBBLASTER_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FT232H := yes" .features && printf "%s" "-DHAVE_FT232H=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "OLD_PCI_GET_DEV := yes" .libdeps && printf "%s" "-DOLD_PCI_GET_DEV=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "UTSNAME := yes" .features && printf "%s" "-DHAVE_UTSNAME=1" ; }
+-D'HAVE_UTSNAME=1'
+exec: export LC_ALL=C ; { grep -q "CLOCK_GETTIME := yes" .features && printf "%s" "-DHAVE_CLOCK_GETTIME=1" ; }
+
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_FT2232_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_USBBLASTER_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FT232H := yes" .features && printf "%s" "-DHAVE_FT232H=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "OLD_PCI_GET_DEV := yes" .libdeps && printf "%s" "-DOLD_PCI_GET_DEV=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "UTSNAME := yes" .features && printf "%s" "-DHAVE_UTSNAME=1" ; }
+-D'HAVE_UTSNAME=1'
+exec: export LC_ALL=C ; { grep -q "CLOCK_GETTIME := yes" .features && printf "%s" "-DHAVE_CLOCK_GETTIME=1" ; }
+
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --cflags-only-I libusb-1.0  || printf "%s" "-I/usr/include/libusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-I/usr/include/libusb-1.0
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_FT2232_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-DCONFIG_USBBLASTER_SPI=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FT232H := yes" .features && printf "%s" "-DHAVE_FT232H=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "OLD_PCI_GET_DEV := yes" .libdeps && printf "%s" "-DOLD_PCI_GET_DEV=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "UTSNAME := yes" .features && printf "%s" "-DHAVE_UTSNAME=1" ; }
+-D'HAVE_UTSNAME=1'
+exec: export LC_ALL=C ; { grep -q "CLOCK_GETTIME := yes" .features && printf "%s" "-DHAVE_CLOCK_GETTIME=1" ; }
+
+exec: export LC_ALL=C ; { grep -q "FTDISUPPORT := yes" .features && printf "%s" "-lftdi -lusb" ; }
+
+exec: export LC_ALL=C ; { grep -q "NEEDLIBZ := yes" .libdeps && printf "%s" "-lz" ; }
+-lz
+exec: export LC_ALL=C ; { grep -q "CLOCK_GETTIME := yes" .features && printf "%s" "-lrt" ; }
+
+exec: export LC_ALL=C ; { [ -n "" ] && export PKG_CONFIG_LIBDIR=""; pkg-config --libs libusb-1.0  || printf "%s" "-lusb-1.0" ; }
+Package libusb-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libusb-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libusb-1.0' found
+-lusb-1.0
